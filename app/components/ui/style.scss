@@ -1,0 +1,30 @@
+.ui {
+	padding: 60px 0;
+
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	&__body {
+		display: grid;
+		grid-gap: 30px;
+	}
+
+	&__section {
+		display: grid;
+		grid-gap: 15px;
+
+		&-title {
+			font-size: 20px;
+		}
+	}
+
+	.container {
+		max-width: 1230px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+}

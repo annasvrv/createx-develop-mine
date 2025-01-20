@@ -1,0 +1,25 @@
+:root {
+  // Colors
+  --stb-black: #000000;
+  --stb-white: #ffffff;
+
+  // White opacity
+  --stb-white-30: #ffffff4d;
+  --stb-white-60: #ffffff99;
+
+  // Gray shades
+  --stb-gray-300: #e5e8ed;
+  --stb-gray-400: #d7dadd;
+  --stb-gray-800: #424551;
+  --stb-gray-900: #1e212c;
+
+  // Orange shade
+  --stb-orange-100: #ff5a30;
+  --stb-orange-300: #fc3300;
+
+  // Background colors
+  --stb-primary: var(--stb-orange-100);
+  --stb-secondary: var(--stb-gray-300);
+
+  --stb-hero-grey: #1e212c99;
+}

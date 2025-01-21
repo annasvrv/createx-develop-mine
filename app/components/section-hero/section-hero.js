@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 export const hero = {
   init() {
@@ -8,7 +8,7 @@ export const hero = {
 
   slider() {
     const swiper = new Swiper(".js_hero-swiper", {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
@@ -19,10 +19,10 @@ export const hero = {
       //     delay: 3000,
       //     disableOnInteraction: false,
       //   },
-      //   pagination: {
-      //     el: ".swiper-pagination",
-      //     clickable: true,
-      //   },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       navigation: {
         nextEl: ".js_hero-slider-next",
         prevEl: ".js_hero-slider-prev",
@@ -40,15 +40,10 @@ export const hero = {
           const paginationArr = document.querySelectorAll(
             ".slider__indicator-btn"
           );
-          //   const slideItem = document.querySelectorAll(".swiper-slide");
           paginationArr.forEach((el) => {
             el.classList.remove("active");
           });
-          //   slideItem.forEach((el) => {
-          //     el.classList.remove("active");
-          //   });
           paginationArr[activeIndex].classList.add("active");
-          //   slideItem[activeIndex].classList.add("active");
         },
       },
     });

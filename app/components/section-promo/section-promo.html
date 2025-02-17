@@ -1,20 +1,56 @@
-<section class="section__promo container">
-  <h2 class="section__title title title--m">
-    We are Createx Construction Bureau
-  </h2>
-  <p class="section__description description description--m">
-    We are rightfully considered to be the best construction company in the USA.
-  </p>
-  <div class="section__video">
-    <iframe
-      width="1230"
-      height="500"
-      src="https://www.youtube.com/embed/bpgozHY2udQ?si=xwIyQz5drDlLKUtP"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+<section class="section section-promo">
+  <div class="container">
+    <div class="section-title section-title--m text-center">
+      <div class="section-title__header">
+        We are Createx Construction Bureau
+      </div>
+      <div class="section-title__text">
+        We are rightfully considered to be the best construction company in the
+        USA.
+      </div>
+    </div>
+    <div class="video section-promo__play" data-id="bpgozHY2udQ">
+      <a
+        class="play"
+        href="https://www.youtube.com/watch?v=bpgozHY2udQ"
+        aria-label="Play video"
+      >
+        <div class="play__thumbnail-container">
+          <picture>
+            <source
+              srcset="
+                /images/section-promo/youtube-promo.avif    1x,
+                /images/section-promo/youtube-promo@2x.avif 2x
+              "
+              type="image/avif"
+            />
+            <img
+              class="play__thumbnail"
+              src="/images/section-promo/youtube-promo.webp 1x"
+              srcset="/images/section-promo/youtube-promo@2x.webp 2x"
+              alt="promo"
+              loading="lazy"
+              width="1230"
+              height="700"
+            />
+          </picture>
+          <div class="play__button">
+            <svg class="icon play__icon" width="26" heiht="26">
+              <use xlink:href="/images/sprite.svg#video-play-icon"></use>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+
+  <!-- <iframe
+    class="promo__video"
+    src="https://www.youtube.com/embed/bpgozHY2udQ?si=xwIyQz5drDlLKUtP"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe> -->
 </section>

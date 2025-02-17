@@ -1,0 +1,87 @@
+<section class="section section-application">
+  <div class="container">
+    <div class="section-application__form-container">
+      <div class="section-application__title">
+        A quick way to discuss details
+      </div>
+
+      <form action="submit" class="section-application__form application-form">
+        <div class="application-form__item section-application__input-item">
+          <label class="application-form__label" for="fullname">Name*</label>
+          <input
+            class="application-form__input"
+            type="text"
+            name="fullname"
+            id="fullname"
+            required
+            placeholder="Your name"
+          />
+        </div>
+
+        <div class="application-form__item section-application__input-item">
+          <label class="application-form__label" for="mobile">Phone*</label>
+          <input
+            class="application-form__input"
+            type="tel"
+            name="mobile"
+            id="mobile"
+            required
+            title="Should match format XXX-XXX-XXXX"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="Your phone"
+          />
+        </div>
+
+        <div class="application-form__item section-application__input-item">
+          <label class="application-form__label" for="email">Email</label>
+          <input
+            class="application-form__input"
+            type="email"
+            name="email"
+            id="email"
+            required
+            pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+            placeholder="Your working email"
+          />
+        </div>
+
+        <div class="application-form__item section-application__message-item">
+          <label class="application-form__label" for="message">Message*</label>
+          <textarea
+            class="application-form__input"
+            type="text"
+            name="message"
+            id="message"
+            rows="2"
+            required
+            placeholder="Your message"
+          ></textarea>
+        </div>
+
+        <div class="application-form__item section-application__checkbox-item">
+          <input
+            class="visually-hidden application-form__checkbox-input"
+            type="checkbox"
+            id="terms"
+            name="terms"
+            checked
+            required
+          />
+          <label
+            class="application-form__label application-form__checkbox"
+            for="terms"
+          >
+            I agree to receive communications from Createx Construction Bureau.
+          </label>
+        </div>
+      </form>
+
+      <button
+        class="application-form__button button button--primary button--m"
+        type="submit"
+      >
+        send request
+      </button>
+    </div>
+  </div>
+</section>

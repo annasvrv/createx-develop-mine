@@ -1,0 +1,102 @@
+@import "../../styles/ui/decorations";
+@import "../../styles/animations";
+
+.section-stat {
+  position: relative;
+  padding-block: 90px 60px;
+  overflow: hidden;
+
+  @include desktop {
+    padding-block: 180px 120px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -110px;
+    left: -180px;
+    display: block;
+    width: 533px;
+    height: 430px;
+    background-image: url("/images/bg-section-stat-image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: "";
+
+    @include desktop {
+      top: -35%;
+      left: -25%;
+      width: 1066px;
+      height: 860px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &__item-number {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.5;
+    color: var(--stb-gray-900);
+    background: var(--stb-accent-border);
+    background-size: 148px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 148px;
+      height: 148px;
+      // border: 6px solid var(--stb-accent-border-completed);
+      border: 6px solid transparent;
+      // background: var(--stb-accent-border-completed);
+      // background-size: 148px;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      border-radius: 100%;
+      content: "";
+    }
+
+    &:hover::after {
+      border-top-color: var(--stb-accent-border-completed);
+      border-right-color: var(--stb-accent-border-completed);
+      border-bottom-color: var(--stb-accent-border-completed);
+
+      transition: border-top-color 0.15s linear,
+        border-right-color 0.15s linear 0.1s,
+        border-bottom-color 0.15s linear 0.2s;
+    }
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--stb-gray-900);
+  }
+}

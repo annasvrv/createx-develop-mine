@@ -1,0 +1,26 @@
+.section-hero-secondary {
+  padding-block: 150px 60px;
+  background-color: var(--stb-gray-200);
+  background-image: url("/images/bg-services-hero.png");
+  background-repeat: no-repeat;
+  background-size: 0;
+  background-position: right;
+
+  @include tablet-l {
+    background-size: 480px 100%;
+  }
+
+  @include desktop {
+    padding-block: 150px 180px;
+    background-size: 975px 100%;
+  }
+
+  &__body {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__breadcrumbs-list {
+    margin-bottom: 40px;
+  }
+}

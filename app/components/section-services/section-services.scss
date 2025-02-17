@@ -1,0 +1,18 @@
+.section-services {
+  padding-block: 160px 40px;
+  background-image: url("/images/bg-services-image@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include desktop {
+    padding-block: 220px 80px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

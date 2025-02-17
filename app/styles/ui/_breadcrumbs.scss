@@ -1,0 +1,31 @@
+.breadcrumbs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &__item {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--stb-gray-800);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      &::after {
+        color: var(--stb-gray-600);
+        content: "/";
+      }
+    }
+
+    &:last-child {
+      color: var(--stb-gray-600);
+    }
+  }
+}

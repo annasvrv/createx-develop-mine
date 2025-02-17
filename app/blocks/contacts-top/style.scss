@@ -1,0 +1,37 @@
+.contact {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+
+  &__image {
+    fill: var(--stb-primary);
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--stb-gray-800);
+  }
+  &__details {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--stb-gray-900);
+  }
+
+  &__info {
+    @include tablet-l {
+      display: none;
+    }
+
+    @include desktop {
+      display: block;
+    }
+  }
+}

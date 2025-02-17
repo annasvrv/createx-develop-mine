@@ -1,0 +1,71 @@
+.accent {
+  &--yellow {
+    // --stb-accent-border: var(--accent-yellow);
+    --stb-accent-border: radial-gradient(
+      circle at center,
+      var(--stb-white) 0%,
+      var(--stb-white) 65%,
+      var(--accent-yellow) 65%,
+      var(--accent-yellow) 100%
+    );
+    --stb-accent-border-completed: var(--accent-comleted-yellow);
+    // --stb-accent-border-completed: radial-gradient(
+    //   circle at center,
+    //   rgba(255, 255, 255, 0) 0%,
+    //   rgba(255, 255, 255, 0) 65%,
+    //   var(--accent-comleted-yellow) 65%,
+    //   var(--accent-comleted-yellow) 100%
+    // );
+  }
+  &--red {
+    --stb-accent-border: radial-gradient(
+      circle at center,
+      var(--stb-white) 0%,
+      var(--stb-white) 65%,
+      var(--accent-red) 65%,
+      var(--accent-red) 100%
+    );
+    --stb-accent-border-completed: var(--accent-comleted-red);
+    // --stb-accent-border-completed: radial-gradient(
+    //   circle at center,
+    //   rgba(255, 255, 255, 0) 0%,
+    //   rgba(255, 255, 255, 0) 65%,
+    //   var(--accent-comleted-red) 65%,
+    //   var(--accent-comleted-red) 100%
+    // );
+  }
+  &--blue {
+    --stb-accent-border: radial-gradient(
+      circle at center,
+      var(--stb-white) 0%,
+      var(--stb-white) 65%,
+      var(--accent-blue) 65%,
+      var(--accent-blue) 100%
+    );
+    --stb-accent-border-completed: var(--accent-comleted-blue);
+    // --stb-accent-border-completed: radial-gradient(
+    //   circle at center,
+    //   rgba(255, 255, 255, 0) 0%,
+    //   rgba(255, 255, 255, 0) 65%,
+    //   var(--accent-comleted-blue) 65%,
+    //   var(--accent-comleted-blue) 100%
+    // );
+  }
+  &--green {
+    --stb-accent-border: radial-gradient(
+      circle at center,
+      var(--stb-white) 0%,
+      var(--stb-white) 65%,
+      var(--accent-green) 65%,
+      var(--accent-green) 100%
+    );
+    --stb-accent-border-completed: var(--accent-comleted-green);
+    // --stb-accent-border-completed: radial-gradient(
+    //   circle at center,
+    //   rgba(255, 255, 255, 0) 0%,
+    //   rgba(255, 255, 255, 0) 65%,
+    //   var(--accent-comleted-green) 65%,
+    //   var(--accent-comleted-green) 100%
+    // );
+  }
+}

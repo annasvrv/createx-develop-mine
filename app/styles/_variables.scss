@@ -4,12 +4,17 @@
   --stb-white: #ffffff;
 
   // White opacity
+  --stb-white-20: #61636b;
   --stb-white-30: #ffffff4d;
   --stb-white-60: #ffffff99;
+  --stb-black-60: #00000099;
 
   // Gray shades
+  --stb-gray-200: #f4f5f6;
   --stb-gray-300: #e5e8ed;
   --stb-gray-400: #d7dadd;
+  --stb-gray-600: #9a9ca5;
+  --stb-gray-700: #787a80;
   --stb-gray-800: #424551;
   --stb-gray-900: #1e212c;
 
@@ -22,4 +27,27 @@
   --stb-secondary: var(--stb-gray-300);
 
   --stb-hero-grey: #1e212c99;
+  --stb-hero-grey: rgb(30, 33, 44);
+  --stb-hero-grey: rgba(154, 156, 165);
+
+  // Shadows
+  --stb-shadow-1: 0 4px 4px -4px rgba(30, 33, 44, 0.3);
+  --stb-shadow-2: 0 12px 10px -6px rgba(154, 156, 165, 0.4);
+  --stb-shadow-3: 0 30px 24px -10px rgba(154, 156, 165, 0.5);
+  --stb-shadow-4: 0 80px 80px -20px rgba(154, 156, 165, 0.8);
+
+  // inputs states
+  --input-error: rgb(255, 66, 66);
+  --input-success: rgb(3, 206, 164);
+
+  // decorators
+  --accent-yellow: rgb(253, 224, 190);
+  --accent-red: rgb(252, 193, 211);
+  --accent-blue: rgb(205, 219, 254);
+  --accent-green: rgb(193, 221, 216);
+
+  --accent-comleted-yellow: rgb(248, 152, 40);
+  --accent-comleted-red: rgb(245, 47, 110);
+  --accent-comleted-blue: rgb(90, 135, 252);
+  --accent-comleted-green: rgb(3, 206, 164);
 }

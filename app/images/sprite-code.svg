@@ -31,6 +31,10 @@
 </svg>
 
 <svg class="icon">
+  <use xlink:href="#down-chevron-icon"></use>
+</svg>
+
+<svg class="icon">
   <use xlink:href="#clock-icon"></use>
 </svg>
 
@@ -64,4 +68,24 @@
 
 <svg class="icon">
   <use xlink:href="#youtube-icon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#video-play-icon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#design-service-icon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#construction-service-icon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#repairs-service-icon"></use>
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#development-service-icon"></use>
 </svg>

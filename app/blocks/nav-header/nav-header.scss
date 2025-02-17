@@ -1,0 +1,22 @@
+.navigation-item {
+  &__link {
+    text-decoration: none;
+    color: var(--stb-gray-800);
+    tab-size: 16px;
+    line-height: 1.6;
+    font-weight: 700;
+
+    @include tablet-l {
+      text-wrap: nowrap;
+    }
+
+    &.active {
+      color: var(--stb-primary);
+    }
+
+    &:hover,
+    &:active {
+      color: var(--stb-primary);
+    }
+  }
+}

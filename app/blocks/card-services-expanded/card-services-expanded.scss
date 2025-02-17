@@ -1,0 +1,35 @@
+.card-services-expanded {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include tablet-l {
+      gap: 40px;
+    }
+
+    @include desktop {
+      gap: 80px;
+    }
+  }
+
+  &__image {
+    max-width: 575px;
+    width: 100%;
+    max-height: 420px;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 4px;
+  }
+
+  &__content-wrapper {
+    max-width: 575px;
+    width: 100%;
+  }
+}

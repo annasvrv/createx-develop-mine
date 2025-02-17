@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 
 export const hero = {
   init() {
@@ -8,17 +8,15 @@ export const hero = {
 
   slider() {
     const swiper = new Swiper(".js_hero-swiper", {
-      modules: [Navigation],
-      loop: true,
+      modules: [Navigation, Autoplay, Pagination],
+      loop: false,
       slidesPerView: 1,
       spaceBetween: 0,
       watchOverflow: true,
       watchSlidesVisibility: true,
-      autoplay: false,
-      //   autoplay: {
-      //     delay: 3000,
-      //     disableOnInteraction: false,
-      //   },
+      // autoplay: {
+      //   delay: 3000,
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -35,17 +33,18 @@ export const hero = {
       },
       on: {
         // events
-        slideChange(instance) {
-          let activeIndex = instance.activeIndex;
-          const paginationArr = document.querySelectorAll(
-            ".slider__indicator-btn"
-          );
-          paginationArr.forEach((el) => {
-            el.classList.remove("active");
-          });
-          paginationArr[activeIndex].classList.add("active");
-        },
+        // slideChange(instance) {
+        //   let activeIndex = instance.activeIndex;
+        //   const paginationArr = document.querySelectorAll(".swiper-pagination");
+        //   paginationArr.forEach((el) => {
+        //     // el.classList.remove("active");
+        //   });
+        //   paginationArr[activeIndex].classList.add("active");
+        // },
       },
     });
+    // setTimeout(() => {
+    //   swiper.slideTo(3);
+    // }, 3000);
   },
 };

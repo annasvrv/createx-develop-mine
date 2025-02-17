@@ -1,0 +1,48 @@
+.section-application {
+  padding-block: 40px;
+  background: image-set(
+    url("/images/bg-section-application.jpg") 1x,
+    url("/images/bg-section-application@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include desktop {
+    padding-block: 80px;
+  }
+
+  &__form-container {
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+    max-width: 495px;
+    width: 100%;
+    margin-left: auto;
+    padding: 28px 20px;
+    border-radius: 4px;
+    background-color: var(--stb-white);
+    box-shadow: var(--stb-shadow-2);
+
+    @include desktop {
+      padding: 48px 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--stb-gray-900);
+
+    @include desktop {
+      font-size: 28px;
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+  }
+}

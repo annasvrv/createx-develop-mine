@@ -1,0 +1,38 @@
+.project-card {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 390px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: var(--stb-shadow-2);
+  cursor: pointer;
+
+  &:hover {
+    .project-card__card-content {
+      transform: translateY(0);
+    }
+  }
+
+  &__image {
+    margin-bottom: 96px;
+  }
+
+  &__card-content {
+    position: absolute;
+    bottom: 0;
+    inset-inline: 0;
+    transform: translateY(70px);
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+    padding: 16px 20px 24px;
+    background-color: var(--stb-white);
+    transition: transform 0.3s ease-in-out;
+
+    @include desktop {
+      gap: 24px;
+      padding: 16px 20px 24px;
+    }
+  }
+}

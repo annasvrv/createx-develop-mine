@@ -1,0 +1,55 @@
+<section class="section section-enquire">
+  <div class="container">
+    <div class="section-enquire__form-container">
+      <div class="section-enquire__title">
+        Want to know more? Ask us a question:
+      </div>
+
+      <form action="submit" class="section-enquire__form enquire-form">
+        <div class="enquire-form__item section-enquire__input-item">
+          <label class="enquire-form__label" for="fullname">Name</label>
+          <input
+            class="enquire-form__input"
+            type="text"
+            name="fullname"
+            id="fullname"
+            required
+            placeholder="Your name"
+          />
+        </div>
+        <div class="enquire-form__item section-enquire__input-item">
+          <label class="enquire-form__label" for="mobile">Phone</label>
+          <input
+            class="enquire-form__input"
+            type="tel"
+            name="mobile"
+            id="mobile"
+            required
+            title="Should match format XXX-XXX-XXXX"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="Your phone"
+          />
+        </div>
+
+        <div class="enquire-form__item section-enquire__message-item">
+          <label class="enquire-form__label" for="message">Message</label>
+          <input
+            class="enquire-form__input"
+            type="text"
+            name="message"
+            id="message"
+            required
+            placeholder="Your message"
+          ></input>
+        </div>
+
+        <button
+          class="enquire-form__button button button--primary button--m"
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

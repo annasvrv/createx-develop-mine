@@ -1,150 +1,43 @@
-<header class="header header--opacue">
+<header class="header">
   <div class="container header__section">
-    <div class="logo header__logo">
+    <div class="header__logo">
       <img
-        class="logo__image"
+        class="header__logo-image"
         src="/images/logo.svg"
         alt="logo"
         width="130"
         height="22"
       />
     </div>
-    <button class="navbar-button" id="burgerBtn" type="button">
-      <span>
-        <svg class="icon navbar-button__icon">
-          <use
-            xlink:href="/images/sprite.svg#burger-menu"
-            width="40"
-            height="40"
-          ></use>
-        </svg>
-      </span>
+    <button class="header__burger-btn" id="burgerBtn" type="button">
+      <svg class="icon burger-icon header__burger-icon" width="40" height="40">
+        <use xlink:href="/images/sprite.svg#burger-menu"></use>
+      </svg>
     </button>
     <!--  -->
-    <div class="sidebar" id="sidebarMob">
-      <div class="sidebar__body">
-        <button type="button" class="sidebar__close" id="closeBtn">
-          <svg class="icon sidebar__btn" width="24" height="24">
+    <div class="header__sidebar" id="sidebarMob">
+      <div class="header__sidebar-body">
+        <button type="button" class="header__sidebar-close" id="closeBtn">
+          <svg class="icon header__sidebar-btn" width="24" height="24">
             <use xlink:href="/images/sprite.svg#cross-icon"></use>
           </svg>
         </button>
-        <ul class="sidebar__list">
-          <li class="sidebar__item">
-            <a class="nav__link active" href="#"> Home </a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">About Us</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Services</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Work</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">News</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Contacts</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-          <li class="sidebar__item">
-            <a class="nav__link" href="#">Other</a>
-          </li>
-        </ul>
-        <div class="sidebar__contacts">
-          <a class="contact" href="tel:4055550128" title="(405) 555-0128">
-            <svg class="icon contact__image" width="40" height="40">
-              <use xlink:href="/images/sprite.svg#phone-icon"></use>
-            </svg>
-            <div class="contact__info">
-              <p class="contact__title">Call us</p>
-              <p class="contact__details">(405) 555-0128</p>
-            </div>
-          </a>
-          <a
-            class="contact"
-            href="mailto:hello@createx.com"
-            title="hello@createx.com"
-          >
-            <svg class="icon contact__image" width="40" height="40">
-              <use xlink:href="/images/sprite.svg#chat-icon"></use>
-            </svg>
-            <div class="contact__info">
-              <p class="contact__title">Talk to us</p>
-              <p class="contact__details">hello@createx.com</p>
-            </div>
-          </a>
+        <div class="header__sidebar-list">
+          <!--#include virtual="/blocks/nav-header/nav-header.html" -->
+        </div>
+        <div class="header__sidebar-contacts">
+          <!--#include virtual="/blocks/contacts-top/contacts-top.html" -->
         </div>
       </div>
     </div>
 
-    <nav class="header__navigation nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav-link active" aria-current="page" href="#"
-            >Home</a
-          >
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav-link" href="#">Services</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav-link" href="#">Work</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav-link" href="#">News</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav-link" href="#">Contacts</a>
-        </li>
+    <nav class="header__navigation">
+      <ul class="header__nav-list">
+        <!--#include virtual="/blocks/nav-header/nav-header.html" -->
       </ul>
-      <div class="nav__contact">
-        <a class="contact" href="tel:4055550128" title="(405) 555-0128">
-          <svg class="icon contact__image" width="40" height="40">
-            <use xlink:href="/images/sprite.svg#phone-icon"></use>
-          </svg>
-          <div class="contact__info">
-            <p class="contact__title">Call us</p>
-            <p class="contact__details">(405) 555-0128</p>
-          </div>
-        </a>
-        <a
-          class="contact"
-          href="mailto:hello@createx.com"
-          title="hello@createx.com"
-        >
-          <svg class="icon contact__image" width="40" height="40">
-            <use xlink:href="/images/sprite.svg#chat-icon"></use>
-          </svg>
-          <div class="contact__info">
-            <p class="contact__title">Talk to us</p>
-            <p class="contact__details">hello@createx.com</p>
-          </div>
-        </a>
+      <div class="header__nav-contact">
+        <!--#include virtual="/blocks/contacts-top/contacts-top.html" -->
       </div>
     </nav>
   </div>
 </header>
-
-<!-- <script src="header.js"></script> -->

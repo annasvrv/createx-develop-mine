@@ -1,21 +1,25 @@
 .card-services-expanded {
-  &__body {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include tablet-l {
+    gap: 40px;
+  }
+
+  @include desktop {
+    gap: 80px;
+  }
+
+  &--reverse {
     @include tablet {
-      flex-direction: row;
-    }
-
-    @include tablet-l {
-      gap: 40px;
-    }
-
-    @include desktop {
-      gap: 80px;
+      flex-direction: row-reverse;
     }
   }
 

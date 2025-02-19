@@ -1,10 +1,18 @@
 .section-hero-secondary {
   padding-block: 150px 60px;
   background-color: var(--stb-gray-200);
-  background-image: url("/images/bg-services-hero.png");
+
   background-repeat: no-repeat;
   background-size: 0;
   background-position: right;
+
+  &--services {
+    background-image: url("/images/bg-services-hero.png");
+  }
+
+  &--design {
+    background-image: url("/images/bg-design-hero.png");
+  }
 
   @include tablet-l {
     background-size: 480px 100%;

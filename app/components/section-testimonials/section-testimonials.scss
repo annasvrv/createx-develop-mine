@@ -6,22 +6,7 @@
     padding-block: 80px 120px;
   }
 
-  &__client-list {
-    overflow-x: auto;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    margin-bottom: 70px;
-
-    @include desktop {
-      margin-bottom: 170px;
-    }
-  }
-
-  &__client-item {
-    flex-shrink: 0;
-  }
-
+ 
   &__content {
     position: relative;
     display: flex;

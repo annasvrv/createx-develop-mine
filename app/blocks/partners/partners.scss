@@ -1,0 +1,17 @@
+.partners {
+  &__list {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    @include desktop {
+      margin-bottom: 170px;
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+  }
+}

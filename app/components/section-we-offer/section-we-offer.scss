@@ -27,16 +27,34 @@
     gap: 24px;
   }
 
-  //   &__item {
-  //
-  //   }
+  &__item {
+    position: relative;
+    padding-left: 44px;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.5;
     color: var(--stb-gray-900);
-    // border: 1px solid #000;
+    list-style: none;
+    list-style-position: outside;
+
+    &::after {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: url("/images/icons-color/plus-color-icon.svg");
+    }
+  }
+
+  &__item[open] &__title::after {
+    content: url("/images/icons-color/minus-color-icon.svg");
+  }
+
+  &__title::-webkit-details-marker,
+  &__title::marker {
+    display: none;
   }
 
   &__text {
